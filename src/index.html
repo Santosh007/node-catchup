@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Catch-up</title>
+<script type="text/javascript" src="scripts/jquery-3.0.0.js"></script>
+<script type="text/javascript" src="scripts/myscript.js"></script>
+<!-- <script type="text/javascript" src="script.js" async></script> -->
+<link rel="stylesheet"
+	href="//fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,700,700i,900,900i"
+	type="text/css" media="all">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="css/emoji.css">
+<link rel="stylesheet" href="css/emoticon.css">
+<link rel="stylesheet" href="css/clouds.css">
+</head>
+
+<body>
+	<!--  class="sky" -->
+	<div id="topmost">
+	<header class="masthead">
+		<h1>Catch-up</h1>
+	</header>
+	<main class="main">
+	<div class="intro">
+		<input id="user-name" name="username" placeholder="User Name"></input>
+		<button id="join" type="submit">Join</button>
+		<button id="leave" type="submit">Leave</button>
+		<!-- <ul class="buddies">
+			<li>one</li>
+			<li>two</li>
+		</ul> -->
+	</div>
+	<!-- <div class="sky">
+	</div> -->
+	<!-- .intro -->
+	<section class="test-area">
+		<!-- <div id="status">Connecting...</div> -->
+		<!-- <div class="cloud fcloud01"></div>
+		<div class="cloud fcloud02"></div> -->
+		<ul id="origin-text"></ul>
+
+		<div class="test-wrapper">
+			<textarea id="test-area" name="textarea" rows="2"
+				placeholder="Type message here."></textarea>	
+			<div id="emobtn">
+				<div class="grayface">
+					<div class="eyes">
+                        <div class="eye left_eye"></div>
+                        <div class="eye right_eye"></div>
+                    </div>
+					<div class="graysmile"></div>
+				</div>
+			</div>	
+		</div>
+		<!-- .test-wrapper -->
+
+		<!-- <div id="origin-text">
+                <p>The text to test.</p>
+            </div>#origin-text -->
+
+		<div class="meta">
+			<!-- <section id="clock">
+                    <div class="timer">00:00:00</div>
+                </section> -->
+
+			<button id="send" type="submit">Send</button>
+		</div>
+		<!-- .meta -->
+	</section>
+	<!-- .test-area -->
+	<section class="dialog">
+                <div class="faces">
+                        <div id="noexp_face" class='emotion face'>
+                                <div class='eyes'>
+                                        <div class='eye left_eye'></div>
+                                        <div class='eye right_eye'></div>
+                                </div>
+                                <div class='mouth-closed'>
+                                </div>
+                        </div>
+                        <div id="happy_face" class='emotion face'>
+                                <div class='eyes'>
+                                        <div class='eye left_eye'></div>
+                                        <div class='eye right_eye'></div>
+                                </div>
+                                <div class='mouth_open'>
+                                        <div class='teeth'></div>
+                                        <div class='tongue'></div>
+                                </div>
+                        </div>
+                        <div id ="smile_face" class='emotion face'>
+                                <div class='eyes'>
+                                        <div class='eye left_eye'></div>
+                                        <div class='eye right_eye'></div>
+                                </div>
+                                <div class='smile'></div>
+                        </div>
+                        <div id = "sad_face" class='emotion face'>
+                                <div class='eyes'>
+                                        <div class='eye left_eye'></div>
+                                        <div class='eye right_eye'></div>
+                                </div>
+                                <div class='sad'></div>
+                        </div>
+                </div>
+        </section>
+	</main>
+	<audio id="msgtone" src="isnt-it.mp3" preload="auto"></audio>
+	</div>
+</body>
+
+</html>
