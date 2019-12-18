@@ -31,10 +31,11 @@ $(document).ready(function() {
     if (uname !== "") {
       let url = "";
       if (proto === "https:") {
-        url = "wss://" + hst + pth + uname;
+        url = "wss://" + hst + pth;
       } else {
-        url = "ws://" + hst + pth + uname;
+        url = "ws://" + hst + pth;
       }
+      console.log(url);
       socket = new WebSocket(url);
       socket.onopen = function(event) {
         subhead.css("background-color", "#429890");
