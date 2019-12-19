@@ -31,9 +31,9 @@ $(document).ready(function() {
     if (uname !== "") {
       let url = "";
       if (proto === "https:") {
-        url = "wss://" + hst + pth;
+        url = "wss://" + hst + pth + uname;
       } else {
-        url = "ws://" + hst + pth;
+        url = "ws://" + hst + pth + uname;
       }
       console.log(url);
       socket = new WebSocket(url);
