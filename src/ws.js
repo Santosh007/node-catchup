@@ -16,6 +16,16 @@ var wsServ = function(server) {
       //console.log("received: %s", message);
     });
 
+    ws.on("close", function closed(code, reason) {
+      /*if(code === 1000) {
+        wss.clients.forEach(function each(client) {
+          if (client !== ws && client.readyState === WebSocket.OPEN) {
+            client.send(reason);
+          }
+        });
+      }*/
+      console.log("Closed with reason : %s", code);
+    });
     //ws.send("something");
   });
 };

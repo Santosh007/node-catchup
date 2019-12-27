@@ -235,7 +235,7 @@ $(document).ready(function() {
 
   function leave() {
     byUser = true;
-    socket.close();
+    socket.close(1000, uname + " left conversation");
   }
 
   function joinleave() {
